@@ -1,0 +1,14 @@
+//GET
+curl http://localhost:8080/api/tasks
+
+//POST
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"title": "Buy groceries", "description": "Milk, eggs, bread", "dueDate": "2025-05-25"}' \
+  http://localhost:8080/api/tasks
+
+//GET BY ID
+curl http://localhost:8080/api/tasks/1
+
+//DELETE
+curl -X DELETE http://localhost:8080/api/tasks/3
